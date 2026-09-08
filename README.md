@@ -1,4 +1,4 @@
-# 🧠 Ahmed-Deaf-11: Real-Time ASL Recognition Ahmed-Deaf-11
+#Ahmed-Deaf-11: Real-Time ASL Recognition Ahmed-Deaf-11
 
 ![Banner](./Ahmed-Deaf-11.png)
 
