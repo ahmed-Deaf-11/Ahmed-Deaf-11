@@ -1,6 +1,6 @@
-#Ahmed-Deaf-11: Real-Time ASL Recognition Ahmed-Deaf-11
+# 🧠 Ahmed.Deaf.11: Real-Time ASL Recognition Ahmed-Deaf-11
 
-![Banner](./Ahmed-Deaf-11.png)
+![Banner](./Ahmed.Deaf.11.png)
 
 [![Release](https://img.shields.io/github/v/release/CodeWithInferno/Ahmed-Deaf-11)](https://github.com/CodeWithInferno/Ahmed-Deaf-11/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
