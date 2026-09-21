@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ahmed-Deaf-11 - مساعد تواصل للصم بلغة الإشارة الأمريكية" />
+  <title>Ahmed-Deaf-11 | تواصل بلغة الإشارة</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">🤟 اتصال شامل للصم وضعاف السمع</p>
+      <h1>Ahmed-Deaf-11</h1>
+      <p>اكتب أو تحدث أو استخدم الكاميرا للتواصل، ثم شارك رسالتك بسهولة.</p>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section class="card message-card">
+      <div class="section-title"><span>💬</span><div><h2>الرسالة</h2><p>اكتب من لوحة المفاتيح، بما فيها Google Keyboard، أو استخدم الإملاء الصوتي.</p></div></div>
+      <textarea id="message" placeholder="اكتب رسالتك هنا..." aria-label="الرسالة"></textarea>
+      <div class="toolbar">
+        <select id="lang" aria-label="لغة التعرف على الكلام">
+          <option value="ar-SA">العربية</option><option value="en-US">English</option><option value="id-ID">Bahasa Indonesia</option>
+        </select>
+        <button id="listen" class="primary">🎙️ كتابة مباشرة</button>
+        <button id="speak">🔊 قراءة بصوت</button>
+        <button id="clear" class="secondary">مسح</button>
+      </div>
+      <p id="recognition" class="status" aria-live="polite">جاهز للكتا��ة</p>
+    </section>
+
+    <section class="card">
+      <div class="section-title"><span>🎬</span><div><h2>النص إلى فيديو ASL</h2><p>أضف المقاطع المرخّصة إلى مجلد <code>videos/</code>، ثم شغّلها بالتتابع.</p></div></div>
+      <div id="stage" class="stage">ستظهر كلمة الإشارة أو مقطع الفيديو هنا</div>
+      <div class="actions"><button id="play" class="primary">▶ تشغيل الإشارات</button><span id="progress" class="status">جاهز</span></div>
+    </section>
+
+    <section class="card camera-card">
+      <div class="section-title"><span>📷</span><div><h2>كاميرا لغة الإشارة الأمريكية ASL</h2><p>يعرض هذا الإصدار الكاميرا ويكتشف وجود اليد. الترجمة الدقيقة تحتاج نموذج ASL مدرّباً.</p></div></div>
+      <video id="camera" autoplay muted playsinline></video>
+      <canvas id="landmarks" aria-hidden="true"></canvas>
+      <div class="actions"><button id="cameraOn" class="primary">تشغيل الكاميرا</button><button id="cameraOff" class="secondary">إيقاف</button></div>
+      <p id="cameraText" class="status" aria-live="polite">الكاميرا متوقفة</p>
+    </section>
+
+    <section class="card share-card">
+      <div class="section-title"><span>📤</span><div><h2>مشاركة الرسالة</h2><p>أرسل النص إلى التطبيقات المثبتة على جهازك.</p></div></div>
+      <div class="share-buttons">
+        <a id="wa" class="share whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+        <a id="messenger" class="share messenger" target="_blank" rel="noopener">Messenger</a>
+        <a id="instagram" class="share instagram" target="_blank" rel="noopener">Instagram</a>
+        <button id="share" class="share native">مشاركة الجهاز</button>
+      </div>
+      <p class="hint">لا تسمح واجهات الويب بإرسال رسائل Instagram أو Messenger مباشرة دون صلاحيات API؛ أزرار المشاركة تفتح التطبيق أو نافذة المشاركة.</p>
+    </section>
+  </main>
+  <footer>Ahmed-Deaf-11 · أداة مساعدة وليست بديلاً عن مترجم لغة إشارة محترف</footer>
+  <script src="script.js"></script>
+</body>
+</html>
